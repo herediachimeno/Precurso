@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo For 3</title>
+</head>
+
+<body>
+    <script>
+
+        // Declaramos variables
+        let filas;
+        let tablero = "";
+        
+        // Preguntamos al usuario
+        filas = parseInt(prompt("¿De cuántas filas quieres el tablero?"));
+
+        // Introducimos bucle para las filas
+        for (let i = 1; i <= filas; i++) {
+            // Introducimos bucle para las columnas
+            for (let ii = 1; ii <= filas; ii++) {
+                if ((i + ii) % 2 == 0) { 
+                    tablero += "";
+                } else { 
+                    tablero += "OXOX";
+                }
+            }
+            tablero += "\n"; 
+        }
+        console.log(tablero);
+
+
+    </script>
+</body>
+
+</html>
